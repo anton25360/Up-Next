@@ -12,7 +12,7 @@ return function (App $app) {
         // Sample log message
         $container->get('logger')->info("Slim-Skeleton '/' route");
 
-        // Render index view
+        // Render homepage view
         return $container->get('renderer')->render($response, 'homepage.phtml', $args);
     });
 
@@ -21,8 +21,10 @@ return function (App $app) {
         // Sample log message
         $container->get('logger')->info("Slim-Skeleton '/' route");
 
-        // Render index view
+        // Render completed view
         return $container->get('renderer')->render($response, 'completed.phtml', $args);
     });
+
+    $app->get('/testing', 'AntonController');
 
 };
