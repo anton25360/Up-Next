@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="df0d439e-6d56-4562-b4a1-b4489a0a2d73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/homepage.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/homepage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dependencies.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/dependencies.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/homepage.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/templates/homepage.phtml" afterDir="false" />
     </list>
@@ -76,7 +78,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/classes/Factories" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -85,9 +87,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/classes/Factories" />
+      <recent name="$PROJECT_DIR$/src/classes/Controllers" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/public/css" />
       <recent name="$PROJECT_DIR$/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/classes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -121,7 +128,8 @@
       <workItem from="1557242527145" duration="15937000" />
       <workItem from="1557424385126" duration="994000" />
       <workItem from="1569321483608" duration="408000" />
-      <workItem from="1573736943611" duration="2287000" />
+      <workItem from="1573736943611" duration="4674000" />
+      <workItem from="1573741909910" duration="22160000" />
     </task>
     <task id="LOCAL-00001" summary="Updated readme &amp; gitignore.">
       <created>1573737203831</created>
@@ -151,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573738237228</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Created DB Model">
+      <created>1573739544756</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573739544756</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,7 +177,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -173,6 +190,7 @@
     <MESSAGE value="Removed inline styling." />
     <MESSAGE value="Linked external CSS file" />
     <MESSAGE value="Created 'completed tasks' page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created 'completed tasks' page" />
+    <MESSAGE value="Created DB Model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created DB Model" />
   </component>
 </project>

@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>Slim 3</title>
-        <link rel="stylesheet" type="text/css" href="/css/homepage.css">
-        <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-    </head>
-    <body>
-        <h1>Slimy</h1>
-        <div>a microframework for PHP</div>
+<head>
+    <meta charset="utf-8"/>
+    <title>Slim 3</title>
+    <link rel="stylesheet" type="text/css" href="/css/homepage.css">
+    <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
 
-        <?php if (isset($name)) : ?>
-            <h2>Hello <?= htmlspecialchars($name); ?>!</h2>
-        <?php else: ?>
-            <p>Try <a href="http://www.slimframework.com">SlimFramework</a></p>
-        <?php endif; ?>
+<h1 id="title">Up Next</h1>
 
-    <form class="data">
-        <input type="text" placeholder="new task">
-        <input type="submit">
-    </form>
+<div>
+    <?php
+    $input = $_GET['input'];
+    echo "<form action='/add' method='get'>";
+        echo "<input id='inputField' type='text' name='newTask' placeholder='new task'>";
+        echo "<input id='inputBtn' type='submit' value='Add'>";
+    echo "</form>";
+    ?>
+</div>
 
-    </body>
+<div>
+    <?php
+
+    foreach ($tasks as $task) {
+
+        echo "<br><form method='get' action='/mark/$task[id]'> $task[name]<input id='doneBtn' type='submit' value='Done'></form>";
+    }
+
+    ?>
+</div>
+
+<div>
+    <form action='/done'><input id='viewCompletedBtn' type='submit' value='View Completed Tasks'></form>
+</div>
+
+</body>
 </html>

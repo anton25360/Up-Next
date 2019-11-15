@@ -1,18 +1,69 @@
-body {
-    margin: 50px 0 0 0;
-    padding: 0;
-    width: 100%;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-align: center;
-    color: #aaa;
-    font-size: 18px;
+@font-face {
+    font-family: 'pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
 }
 
-h1 {
-    color: #719e40;
-    letter-spacing: -3px;
-    font-family: 'Lato', sans-serif;
+*{
+    font-family: pro;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    font-size: 18px;
+    background-image: linear-gradient(#8e9eab, #eef2f3);
+}
+
+#title {
     font-size: 100px;
     font-weight: 200;
-    margin-bottom: 0;
+    margin-bottom: 20px;
+
+    display: inline-block;
+    background: linear-gradient(320deg, #021B79, #0575E6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#inputField{
+    /*border: none;*/
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+
+#inputBtn{
+    background-color: black;
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+#doneBtn, #deleteBtn{
+    border: transparent;
+    border-radius: 3px;
+    font-size: 13px;
+    background-color: #64ff89;
+    margin-left: 10px;
+}
+
+#deleteBtn{
+    background-color: #f05d59;
+}
+
+#viewCompletedBtn, #goHomeBtn{
+    margin: 20px;
+    background-color: black;
+    font-size: 13px;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 3px;
 }

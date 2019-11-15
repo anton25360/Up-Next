@@ -7,24 +7,14 @@ use Slim\Http\Response;
 return function (App $app) {
     $container = $app->getContainer();
 
-    //home page (displays tasks)
-    $app->get('/', function (Request $request, Response $response, array $args) use ($container) {
-        // Sample log message
-        $container->get('logger')->info("Slim-Skeleton '/' route");
+    $app->get('/', 'HomepageController'); //view incomplete tasks
 
-        // Render homepage view
-        return $container->get('renderer')->render($response, 'homepage.phtml', $args);
-    });
+    $app->get('/done', 'CompletedController'); //view completed tasks
 
-    //completed page (displays done tasks)
-    $app->get('/completed', function (Request $request, Response $response, array $args) use ($container) {
-        // Sample log message
-        $container->get('logger')->info("Slim-Skeleton '/' route");
+    $app->get('/mark/{id}', 'MarkTaskController'); //mark task as done & redirect to home
 
-        // Render completed view
-        return $container->get('renderer')->render($response, 'completed.phtml', $args);
-    });
+    $app->get('/add','AddTaskController'); //add task to db and redirect to home
 
-    $app->get('/testing', 'AntonController');
+    $app->get('/delete/{id}','DeleteTaskController'); //remove tasks from db and redirect to completed tasks
 
 };
